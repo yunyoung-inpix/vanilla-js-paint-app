@@ -27,7 +27,7 @@ canvas {
   height: 500px;
   border: 2px solid gray;
   background-color: white;
-  margin-bottom: 30px;
+  /* margin-bottom: 20px; */
 }
 
 button {
@@ -40,21 +40,30 @@ button {
   height: 30px;
 }
 
+#color-box {
+  width: 100%;
+}
+
+#color {
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 20px;
+}
+
 #color-palette {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.color-option {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  cursor: pointer;
-  &:hover {
-    opacity: 0.5;
-    transition: all 0.2s ease-in-out;
-  }
+#color::-webkit-color-swatch {
+  border: none;
 }
 
 #tool-box {
@@ -69,4 +78,15 @@ button {
 }
 #save {
   height: 50px;
+}
+
+.color-option {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+  }
 }
